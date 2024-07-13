@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register Courier</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action = "registercourier_processing.jsp">
+            Courier Name:<input type = "text" maxlength = "45" id = "companyname" name = "companyname" required><br>
+            Courier Contact:<input type = "text" maxlength ="11" id = "contact" name = "contact" required><br>
+            Courier Street:<input type = "text" maxlength="45" id = "streetname" name = "streetname" required><br>
+            Courier City:<input type = "text" maxlength="45" id = "city" name = "city" required><br>
+            Courier Zip Code:<input type = "text" maxlength="4" id = "zipcode" name = "zipcode" required><br>
+            Courier Region:<input type = "text" maxlength="45" id = "region" name = "region" required><br>
+            <input type="submit" value="Proceed"><br>
+        </form>
+            <br><br> <button onclick="window.location.href = 'couriersmenu.html';">Cancel</button>        
+    </body>
+</html>

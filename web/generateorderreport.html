@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Generate Report on Time Taken to Complete Orders</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="generateorderreport_processing.jsp">
+            <h1>Enter Criteria to Filter Orders With:</h1>
+            Supplier ID:                        <input type="text" name="supplierid" value="" /><br>
+            Product ID:                         <input type="text" name="productid" value="" /><br>
+            Date acknowledged:                  <input type="text" name="dateshipped" value="" /><br>
+            Date shipped:                        <input type="text" name="dateshipped" value="" /><br>
+            
+            <input type="submit" value="Submit"><br>
+            <a href ="suppliermenu.html"><input type="button" value="Cancel"></a>
+        </form>
+    </body>
+</html>

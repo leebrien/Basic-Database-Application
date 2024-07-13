@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Update a Product</title>
+    
+    <script>
+        function validateForm() {
+            var productID = document.getElementById("productid").value;
+            var errorMessageElement = document.getElementById("errorMessage");
+
+            // Clear previous error message
+            errorMessageElement.innerText = "";
+
+            // Check if Sales product ID was provided with value
+            if (productID.trim() === "") {
+                errorMessageElement.innerText = "Product ID is required. Please provide a value.";
+                return false;
+            }
+
+            // Check if the product ID is of the correct data type
+            if (isNaN(productID)) {
+                errorMessageElement.innerText = "Product ID must be a number.";
+                return false;
+            }
+
+            // If all checks pass, proceed with the form submission
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form action="updateproduct_update.jsp" onsubmit="return validateForm()">
+        Product ID :<input type="text" id="productid" name="productid" required/><br>
+
+        <input type="submit" value="Proceed">
+        
+        <input type="button" value="Cancel" onclick="location.href='index.html'">
+        
+        <div id="errorMessage"></div>
+    </form>
+</body>
+</html>
